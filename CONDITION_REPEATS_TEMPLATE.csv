@@ -1,0 +1,2 @@
+condition,sequence,baseline_mae,ours_mae,oracle_mae,selection_error,invalid_pct
+C1,1,REPLACE,REPLACE,REPLACE,REPLACE,REPLACE

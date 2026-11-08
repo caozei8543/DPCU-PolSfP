@@ -1,0 +1,2 @@
+condition_id,material,temperature_C,roughness_Ra_um,background_temperature_C,sequence_id,working_distance_m,camera_model,polarizer_model,raw_four_angle_path,reference_mesh_path,calibration_hash
+C1,obsidian,150,,,1,1.2,FLIR SC5500-M,Thorlabs WP25M-IRA,REPLACE_WITH_REAL_FILE,REPLACE_WITH_REAL_MESH,REPLACE

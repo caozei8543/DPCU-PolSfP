@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dpcu-polsfp-reference"
+version = "0.1.0"
+description = "Runnable, manuscript-derived reference implementation of physically constrained infrared SfP."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "License not granted; see LICENSE_NOTICE.md" }
+dependencies = ["numpy>=1.24,<3", "scipy>=1.10", "torch>=2.2", "PyYAML>=6", "Pillow>=10", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "ruff>=0.5"]
+
+[project.scripts]
+dpcu-polsfp = "dpcu_polsfp.cli:main"
+
+[tool.setuptools.packages.find]
+where=["src"]
+
+[tool.pytest.ini_options]
+testpaths=["tests"]
+addopts="-ra"
+
+[tool.ruff]
+line-length=100
